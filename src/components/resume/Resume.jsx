@@ -1,66 +1,83 @@
 
 import React from "react";
 import "./resume.css";
-import Data from "./Data";
 import Card from "./Card";
 
 const Resume = () => {
+  const Data = [
+    {
+      id: 1,
+      year: "Sept 2019 - Present",
+      title: "Undergraduate Student",
+      company: "- Queen’s University",
+      desc: "Specialized major in Computing, Mathematics and Analytics.",
+      position: "left",
+      icon: "https://i.ibb.co/X72MdTW/graduation-cap-outline.png",
+      color: "rgba(179, 228, 247, 1)"
+    },
+    {
+      id: 2,
+      year: "May 2023 - Present",
+      title: "Tech Analyst",
+      company: "- inQUbate",
+      desc: "Utilized AI, ML, and DL skills to construct minimum viable products aligned with UN SDGs.",
+      position: "right",
+      icon: "https://i.ibb.co/6BNkcDk/briefcase.png",
+      color: "rgba(189, 235, 198, 1)",
+    },
+    {
+      id: 2,
+      year: "Sept 2022 - Present",
+      title: "Automation Scripting Developer",
+      company: "- Ericsson Canada Inc.",
+      desc: "Developed, deployed and maintained automated workflows/tools/web page, reduced manual processes.",
+      position: "left",
+      icon: "https://i.ibb.co/6BNkcDk/briefcase.png",
+      color: "rgba(189, 235, 198, 1)",
+    },
+
+    {
+      id: 3,
+      year: "Sept 2021 - Present",
+      title: "Teaching Assistant",
+      company: "- Queen’s University",
+      desc: "Instructed students and assessed assignments for courses including Discrete Mathematics, Data Structure and Java.",
+      position: "right",
+      icon: "https://i.ibb.co/6BNkcDk/briefcase.png",
+      color: "rgba(189, 235, 198, 1)",
+    },
+    {
+      id: 4,
+      year: "May 2021 - Aug 2021",
+      title: "Advertising Data Analyst",
+      company: "- Xiaomi Inc.",
+      desc: "Created and managed advertising campaigns on Xiaomi Devices. Analyzed and optimized promotion data.",
+      position: "left",
+      icon: "https://i.ibb.co/6BNkcDk/briefcase.png",
+      color: "rgba(189, 235, 198, 1)"
+    },
+  ]
   return (
     <section className="resume container section" id="resume">
       <h2 className="section__title">Experience</h2>
-        {/* <ul>
-            <li style="--accent-color:#41516C">
-                <div class="date">2002</div>
-                <div class="title">Title 1</div>
-                <div class="descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas itaque hic quibusdam fugiat est numquam harum, accusamus suscipit consequatur laboriosam!</div>
-            </li>
-            <li style="--accent-color:#FBCA3E">
-                <div class="date">2007</div>
-                <div class="title">Title 2</div>
-                <div class="descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos adipisci nobis nostrum vero nihil veniam.</div>
-            </li>
-            <li style="--accent-color:#E24A68">
-                <div class="date">2012</div>
-                <div class="title">Title 3</div>
-                <div class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minima consequuntur soluta placeat iure totam commodi repellendus ea delectus, libero fugit quod reprehenderit, sequi quo, et dolorum saepe nulla hic.</div>
-            </li>
-
-        </ul> */}
-      {/* <div className="resume__container grid">
-        <div className="timeline grid">
+        <div className="timeline">
           {Data.map((val, id) => {
-            if (val.category === "education") {
               return (
                 <Card
                   key={id}
                   icon={val.icon}
+                  color={val.color}
                   title={val.title}
+                  company={val.company}
                   year={val.year}
                   desc={val.desc}
+                  position={val.position}
                 />
               );
-            }
           })}
         </div>
-
-        <div className="timeline grid">
-          {Data.map((val, index) => {
-            if (val.category === "experience") {
-              return (
-                <Card
-                  key={index}
-                  icon={val.icon}
-                  title={val.title}
-                  year={val.year}
-                  desc={val.desc}
-                />
-              );
-            }
-          })}
-        </div>
-      </div>*/}
     </section>
   );
 };
 
-export default Resume; 
+export default Resume;

@@ -9,17 +9,10 @@ const About = () => {
       category: "Full Stack Development",
       percentage: "90%",
       color: "Full_Stack",
-      skills: "Python, Java, JavaScript, HTML/CSS, PHP, MySQL, Express.js, Git, Microsoft Azure, React, Linux, MangoDB"
+      skills: "Python, Java, JavaScript, HTML/CSS, C/C++, PHP, MySQL, Express.js, Microsoft Azure, React, Linux, MongoDB"
     },
-    // {
-    //   id: 2,
-    //   category: "Automation Scripting",
-    //   percentage: "90%",
-    //   color: "Automation",
-    //   skills: "Python, Java, JavaScript, HTML/CSS, PHP, MySQL, Express.js, Git, Microsoft Azure, React, Linux"
-    // },
     {
-      id: 3,
+      id: 2,
       category: "Machine Learning & AI",
       percentage: "90%",
       color: "ML",

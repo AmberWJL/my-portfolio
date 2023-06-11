@@ -15,7 +15,7 @@
   --first-color: #64c9b8;
   --title-color: hsl(340, 97%, 58%);
   --text-color: #4c1f5e;
-  --container-color: rgba(255, 255, 255, 0.25);
+  --container-color: rgba(255, 255, 255, 0.68);
   /*========== Font and Typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Rubik", sans-serif;

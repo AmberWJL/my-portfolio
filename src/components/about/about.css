@@ -5,10 +5,9 @@
 
 .about__data {
   padding: 1.875rem;
-  backdrop-filter: blur(11px);
   box-shadow: var(--shadow);
   border-radius: var(--border-radius);
-  grid-template-columns: 360px 1fr;
+  grid-template-columns: 1fr 1fr;
   column-gap: 1.875rem;
   align-items: flex-start;
   position: relative;
@@ -23,7 +22,7 @@
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-right: 15px solid var(--container-color);
+  border-right: 15px solid  rgba(255, 255, 255);
   position: absolute;
   left: -0.93rem;
   top: 20%;
