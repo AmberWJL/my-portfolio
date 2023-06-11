@@ -1,8 +1,6 @@
 import React from "react";
 import "./home.css";
 import Me from "../../assets/avatar.png";
-import HeaderSocials from "./HeaderSocials";
-
 import Shapes from "./Shapes";
 
 const Home = () => {

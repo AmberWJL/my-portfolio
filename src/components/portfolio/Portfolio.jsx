@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./portfolio.css";
 import Menu from "./Menu";
 
@@ -18,7 +18,7 @@ const Portfolio = () => {
                 <div className="work__mask"></div>
               </div>
               <h3 className="work__title">{title}</h3>
-              <a href="#" className="work__button">
+              <a href="/#" className="work__button">
                 <i className="icon-link work__button-icon"></i>
               </a>
             </div>
