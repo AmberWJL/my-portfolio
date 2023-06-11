@@ -8,7 +8,7 @@
   backdrop-filter: blur(11px);
   box-shadow: var(--shadow);
   border-radius: var(--border-radius);
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 360px 1fr;
   column-gap: 1.875rem;
   align-items: flex-start;
   position: relative;
@@ -39,6 +39,36 @@
 .about__skills {
   row-gap: 1.25rem;
 }
+.skills__data {
+  padding-top: 5px;
+  padding-bottom: 5px;
+} 
+.hover_to_show {
+  display: none;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skills__data:hover + .hover_to_show {
+  display: block;
+  animation: slideInFromTop 0.3s ease forwards;
+}
+
+
 
 .skills__titles {
   display: flex;
@@ -70,20 +100,44 @@
   display: block;
 }
 
-.development {
+.Full_Stack {
   width: 90%;
-  background-color: rgb(255, 209, 92);
+  background-color: rgb(255, 204, 75);
 }
 
-.ui__design {
+.Automation {
   width: 90%;
-  background-color: rgb(255, 76, 96);
+  background-color: rgb(243, 109, 255);
 }
 
-.photography {
+.ML {
   width: 90%;
-  background-color: rgb(108, 108, 299);
+  background-color: rgb(81, 212, 235);
 }
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 5px;
+}
+
+.skill-item {
+  font-size: 15px;
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 5px;
+}
+
+.Full_Stack-bg{
+  background-color: rgba(255, 239, 114, 0.18);
+}
+
+.ML-bg{
+  background-color:  rgba(81, 212, 235, 0.12);
+}
+
+
+
 
 .about__boxes {
   grid-template-columns: repeat(4, 1fr);

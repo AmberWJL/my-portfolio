@@ -7,7 +7,7 @@ const Portfolio = () => {
   
   return (
     <section className="work container section" id="work">
-      <h2 className="section__title">Recent Works</h2>
+      <h2 className="section__title">Portfolio</h2>
       <div className="work__container grid">
         {items.map((elem) => {
           const { id, image, title } = elem;
