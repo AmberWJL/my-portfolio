@@ -52,8 +52,8 @@
   cursor: pointer;
   height: 40px;
   width: 45px;
-  background-color: var(--container-color);
-  border: 2px solid #dfdfc444;
+  background-color: rgb(255, 251, 229);
+  border: 2px solid #dfdfc468;
   border-radius: 1rem;
   display: none;
   justify-content: center;
