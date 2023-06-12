@@ -13,7 +13,7 @@ const Sidebar = () => {
       icon: "icon-user-following",
     },
 		{
-			link: "#resume",
+			link: "#experience",
       icon: "icon-graduation",
     },
 		{

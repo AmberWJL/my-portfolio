@@ -11,6 +11,7 @@
     position: absolute;
     width: 6px;
     background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(228, 222, 222, 0.4);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -19,7 +20,7 @@
 
 /* Container around content */
 .timeline__container {
-    padding: 10px 40px;
+    padding: 10px 90px;
     position: relative;
     background-color: inherit;
     width: 50%;
@@ -31,7 +32,7 @@
   position: absolute;
   width: 35px;
   height: 35px;
-  right: -17px;     /* left::after */
+  right: -25px;     /* left::after */
   background-image: var(--icon-image);
   /* Add padding to create margin between the circle and the icon */
   background-origin: content-box;
@@ -40,7 +41,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--icon-color);
-  border: 3px solid rgb(255, 255, 255);
+  border: 3px solid white;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -64,7 +65,7 @@
   top: 26px;
   width: 0;
   z-index: 1;
-  right: 30px;
+  right: 80px;
   border: medium solid rgb(226, 156, 5);
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent  rgba(255, 255, 255, 0.90);
@@ -78,7 +79,7 @@
   top: 26px;
   width: 0;
   z-index: 1;
-  left: 30px;
+  left: 80px;
   border: medium solid white;
   border-width: 10px 10px 10px 0;
   border-color: transparent   rgba(255, 255, 255, 0.90) transparent transparent;
@@ -86,7 +87,7 @@
 
 /* Fix the circle for containers on the right side */
 .right::after {
-    left: -17px;
+    left: -25px;
   }
 /* The actual content */
 .timeline__content {
@@ -103,7 +104,7 @@
     width:max-content;
     color: #8b88b1;
     font-size: var(--small-font-size);
-    top: 17%
+    top: 20%
   }
   
   .timeline__container.left .timeline__date {
@@ -164,7 +165,7 @@
   
     /* Make sure all circles are at the same spot */
     .left::after, .right::after {
-        left: 14px;
+        left: 8px;
     }
     .timeline__container.left .timeline__date, 
     .timeline__container.right .timeline__date {
