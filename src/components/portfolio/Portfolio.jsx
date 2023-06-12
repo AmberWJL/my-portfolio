@@ -14,7 +14,6 @@ const Portfolio = () => {
       category: "Project",
       link: "https://github.com/Caroline-xu/QWQ"
     },
-    ,
     {
       id: 4,
       image: Work4,
