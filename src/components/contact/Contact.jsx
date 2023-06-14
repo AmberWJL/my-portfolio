@@ -14,12 +14,13 @@ const Contact = () => {
           </p> */}
         </div>
 
-        <form action="" className="contact__form">
+        <form action="https://getform.io/f/57917c58-e09b-4562-9c15-1a0966062474" method="POST" className="contact__form">
           <div className="contact__form-group">
             <div className="contact__form-div">
               <input
                 type="text"
                 className="contact__form-input"
+                name="name"
                 placeholder="Insert your name"
               />
             </div>
@@ -28,23 +29,15 @@ const Contact = () => {
               <input
                 type="email"
                 className="contact__form-input"
+                name="Email"
                 placeholder="Insert your email"
               />
             </div>
           </div>
 
-          <div className="contact__form-div">
-            <input
-              type="text"
-              className="contact__form-input"
-              placeholder="Insert your subject"
-            />
-          </div>
-
           <div className="contact__form-div contact__form-area">
             <textarea
-              name=""
-              id=""
+              name="Message"
               cols="30"
               rows="10"
               className="contact__form-input"

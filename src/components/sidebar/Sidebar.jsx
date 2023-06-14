@@ -43,7 +43,7 @@ const Sidebar = () => {
           {links.map(({link, icon})=> (
             <li className="nav__item">
               <a href={link} className="nav__link">
-                <i className={icon}></i>
+                <i onClick={() => showMenu(!toggle)} className={icon}></i>
               </a>
             </li>
           ))}	

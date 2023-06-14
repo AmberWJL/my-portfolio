@@ -9,35 +9,35 @@ import WechatMini from "../../assets/pf-wechat.png";
 const Portfolio = () => {
   const Menu = [
     {
-      id: 3,
+      id: 1,
       image: WechatMini,
-      title: "Wechat Mini-program that Connects Students",
+      title: "Wechat Mini-Program that Connects Students",
       category: "Project",
       link: "https://github.com/Amber201604/aranyaka2"
     },
     {
-      id: 3,
+      id: 2,
       image: Borealis,
-      title: "Forecast Depression Level from Text Use ML Algorithms",
+      title: "Forecast Depression Level from Text Using ML Algorithms",
       category: "Project",
       link: "https://github.com/Caroline-xu/QWQ"
     },
     {
-      id: 4,
+      id: 3,
       image: Smarize,
       title: "Smarize: Summarizing Youtube Video Content",
       category: "Project",
       link: "https://github.com/AmberWJL/QhacksSmarizer",
     },
     {
-      id: 1,
+      id: 4,
       image: Manifold,
       title: "Manifold Hypothesis Testing for Common Datasets",
       category: "Research",
       link: "",
     },
     {
-      id: 2,
+      id: 5,
       image: Airflow,
       title: "Challenges Developers Encounter when Using Apache Airflow",
       category: "Research",
