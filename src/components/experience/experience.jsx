@@ -1,8 +1,8 @@
 
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "./experience.css";
 import Card from "./Card";
-import { motion, useInView, useAnimation } from "framer-motion"
+// import { motion, useInView, useAnimation } from "framer-motion"
 
 const Experience = () => {
   const Data = [
@@ -59,15 +59,15 @@ const Experience = () => {
     },
   ]
 
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true});
-  const mainControl = useAnimation();
+  // const ref = useRef(null);
+  // const isInView = useInView(ref, { once: true});
+  // const mainControl = useAnimation();
 
-  useEffect(() => {
-    if (isInView) {
-      mainControl.start("visible")
-    }
-  }, [isInView]);
+  // useEffect(() => {
+  //   if (isInView) {
+  //     mainControl.start("visible")
+  //   }
+  // }, [isInView]);
 
   return (
     <section className="experience container section" id="experience">
@@ -82,7 +82,7 @@ const Experience = () => {
           animate={mainControl}
           transition={{duration:0.5}}
           > */}
-          <div ref={ref} className="timeline">
+          <div className="timeline">
           {Data.map((val, id) => {
               return (
                 <Card 
