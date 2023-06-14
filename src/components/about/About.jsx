@@ -39,10 +39,10 @@ const About = () => {
         <div className="about__data grid">
           <div className="about__info">
             <p className="about__description">
-              I'm Amber Wang, a Computer Science student graduating in 2024. I have experience in full stack web development, machine learning, and AI. I'm a quick learner and thrive in team environments. Feel free to explore my protfolio and download my experience!
+              I'm Amber Wang, a Computer Science student graduating in 2024. I have experience in full stack web development, machine learning, and AI. I'm a quick learner and thrive in team environments. Feel free to explore my protfolio and download my resume!
             </p>
-            <a href="/#" className="btn">
-              Download
+            <a href="/Amber_Wang_Resume.pdf" download={true} className="btn">
+              Resume
             </a>
           </div>
           <div className="about__skills grid">

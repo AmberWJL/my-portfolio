@@ -1,36 +1,44 @@
 import React, { useState } from "react";
 import "./portfolio.css";
-import Work1 from "../../assets/pf-manifold.png";
-import Work2 from "../../assets/pf-airflow.png";
-import Work3 from "../../assets/pf-borealis.png";
-import Work4 from "../../assets/pf-smarizer.png";
+import Manifold from "../../assets/pf-manifold.png";
+import Airflow from "../../assets/pf-airflow.png";
+import Borealis from "../../assets/pf-borealis.png";
+import Smarize from "../../assets/pf-smarizer.png";
+import WechatMini from "../../assets/pf-wechat.png";
 
 const Portfolio = () => {
   const Menu = [
     {
       id: 3,
-      image: Work3,
+      image: WechatMini,
+      title: "Wechat Mini-program that Connects Students",
+      category: "Project",
+      link: "https://github.com/Amber201604/aranyaka2"
+    },
+    {
+      id: 3,
+      image: Borealis,
       title: "Forecast Depression Level from Text Use ML Algorithms",
       category: "Project",
       link: "https://github.com/Caroline-xu/QWQ"
     },
     {
       id: 4,
-      image: Work4,
-      title: "Smarize: summarizing Youtube video content",
+      image: Smarize,
+      title: "Smarize: Summarizing Youtube Video Content",
       category: "Project",
       link: "https://github.com/AmberWJL/QhacksSmarizer",
     },
     {
       id: 1,
-      image: Work1,
+      image: Manifold,
       title: "Manifold Hypothesis Testing for Common Datasets",
       category: "Research",
       link: "",
     },
     {
       id: 2,
-      image: Work2,
+      image: Airflow,
       title: "Challenges Developers Encounter when Using Apache Airflow",
       category: "Research",
       link: "",

@@ -2,6 +2,7 @@
 import React from "react";
 import "./experience.css";
 import Card from "./Card";
+import { motion } from "framer-motion"
 
 const Experience = () => {
   const Data = [
@@ -60,10 +61,10 @@ const Experience = () => {
   return (
     <section className="experience container section" id="experience">
       <h2 className="section__title">Experience</h2>
-        <div className="timeline">
+        <motion.div animate = {{ scale: 1}} initial={{ scale: 0 }} className="timeline">
           {Data.map((val, id) => {
               return (
-                <Card
+                <Card 
                   key={id}
                   icon={val.icon}
                   color={val.color}
@@ -75,7 +76,7 @@ const Experience = () => {
                 />
               );
           })}
-        </div>
+        </motion.div>
     </section>
   );
 };

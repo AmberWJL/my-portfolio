@@ -15,10 +15,7 @@ const Home = () => {
       </p>
 
         {/* <HeaderSocials /> */}
-        <div></div>
-        <a href="#contact" className="btn">
-          Hire Me
-        </a>
+
         
         <div className="scroll__down">
           <a href="#about" className="mouse__wrapper">
@@ -29,7 +26,6 @@ const Home = () => {
           </a>
         </div>
       </div>
-
       <Shapes />
     </section>
   );

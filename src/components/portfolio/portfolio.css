@@ -27,12 +27,12 @@
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   justify-self: center;
-  width: 266px;
-  height: 190px;
+  width: 265px;
+  height: 195px;
 }
 .work__thumbnail {
   position: relative;
-  width: 266px;
+  width: 270px;
   height: 200px;
   background: white;
   display: flex;
