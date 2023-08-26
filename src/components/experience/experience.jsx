@@ -1,4 +1,3 @@
-
 import React from "react";
 import "./experience.css";
 import Card from "./Card";
@@ -8,13 +7,13 @@ const Experience = () => {
   const Data = [
     {
       id: 1,
-      year: "Sept 2019 - Present",
+      year: "Sept 2019 - Current",
       title: "Undergraduate Student",
       company: "- Queen’s University",
       desc: "Specialized major in Computing, Mathematics and Analytics.",
       position: "left",
       icon: "https://i.ibb.co/X72MdTW/graduation-cap-outline.png",
-      color: "rgba(179, 228, 247, 1)"
+      color: "rgba(179, 228, 247, 1)",
     },
     {
       id: 2,
@@ -28,7 +27,7 @@ const Experience = () => {
     },
     {
       id: 2,
-      year: "Sept 2022 - Present",
+      year: "Sept 2022 - Aug 2023",
       title: "Automation Scripting Developer",
       company: "- Ericsson Canada Inc.",
       desc: "Developed, deployed and maintained automated workflows/tools/web page, reduced manual processes.",
@@ -39,7 +38,7 @@ const Experience = () => {
 
     {
       id: 3,
-      year: "Sept 2021 - Present",
+      year: "Sept 2021 - Aug 2023",
       title: "Teaching Assistant",
       company: "- Queen’s University",
       desc: "Instructed students and assessed assignments for courses including Discrete Mathematics, Data Structure and Java.",
@@ -55,9 +54,9 @@ const Experience = () => {
       desc: "Created and managed advertising campaigns on Xiaomi Devices. Analyzed and optimized promotion data.",
       position: "left",
       icon: "https://i.ibb.co/6BNkcDk/briefcase.png",
-      color: "rgba(189, 235, 198, 1)"
+      color: "rgba(189, 235, 198, 1)",
     },
-  ]
+  ];
 
   // const ref = useRef(null);
   // const isInView = useInView(ref, { once: true});
@@ -72,7 +71,7 @@ const Experience = () => {
   return (
     <section className="experience container section" id="experience">
       <h2 className="section__title">Experience</h2>
-        {/* <div>
+      {/* <div>
         <motion.div 
           variants={{
             hidden: {opacity:0, y:75},
@@ -82,23 +81,23 @@ const Experience = () => {
           animate={mainControl}
           transition={{duration:0.5}}
           > */}
-          <div className="timeline">
-          {Data.map((val, id) => {
-              return (
-                <Card 
-                  key={id}
-                  icon={val.icon}
-                  color={val.color}
-                  title={val.title}
-                  company={val.company}
-                  year={val.year}
-                  desc={val.desc}
-                  position={val.position}
-                />
-              );
-          })}
-          </div>
-        {/* </motion.div>
+      <div className="timeline">
+        {Data.map((val, id) => {
+          return (
+            <Card
+              key={id}
+              icon={val.icon}
+              color={val.color}
+              title={val.title}
+              company={val.company}
+              year={val.year}
+              desc={val.desc}
+              position={val.position}
+            />
+          );
+        })}
+      </div>
+      {/* </motion.div>
       </div> */}
     </section>
   );
