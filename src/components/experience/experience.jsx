@@ -1,6 +1,11 @@
 import React from "react";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import ExperienceCard from "./experienceCard";
+import rbcLogo from "../../assets/exp/rbc.png";
+import uwaterlooLogo from "../../assets/exp/uwaterloo.png";
+import ericssonLogo from "../../assets/exp/ericsson.png";
+import queensLogo from "../../assets/exp/queens.png";
+import xiaomiLogo from "../../assets/exp/xiaomi.png";
 import "./experience.css";
 
 const experiences = [
@@ -8,41 +13,41 @@ const experiences = [
     company: "Royal Bank of Canada",
     title: "Machine Learning Developer",
     date: "May 2025 - Current",
-    logo: "./rbc.png",
+    logo: rbcLogo,
     description:
-      "Built and iterated on Generative AI prototypes using Python, JavaScript, and vector databases. Researched and tested LLM tools to recommend solutions for internal use cases. Contributed to Agile sprints by coding, testing, and deploying ML workflows and features.",
+      "Contributed to the development of Generative AI tools by building prototypes and evaluating language models. Worked closely with teams to support internal use cases through research and hands-on implementation of machine learning workflows.",
   },
   {
     company: "University of Waterloo",
     title: "Research Assistant",
     date: "Jan 2024 - Current",
-    logo: "./uwaterloo.png",
+    logo: uwaterlooLogo,
     description:
-      "Co-authored a paper on maintaining test cases using LLMs in Java. Developed Python scripts for mining and preprocessing code-test updates from GitHub. Implemented fine-tuning and multi-round refinement techniques to automate test case updates.",
+      "Collaborated on research exploring the use of language models for software testing. Created tools to analyze code changes and support test maintenance, while applying iterative strategies to refine automated outputs.",
   },
   {
     company: "Ericsson Canada Inc.",
     title: "Automation Engineer",
     date: "Sept 2022 - Dec 2023",
-    logo: "./ericsson.png",
+    logo: ericssonLogo,
     description:
-      "Built 10+ automated workflows with Power Automate, Azure, and Python, reducing manual tasks by 90%. Developed an internal email server for license requests serving 400+ users. Created a web app with React.js to visualize problem-solving chains.",
+      "Developed internal automation tools to streamline workflows and reduce manual effort. Maintained systems that improved operational efficiency, including a web-based interface for tracking and visualizing process data.",
   },
   {
     company: "Queen’s University",
     title: "Teaching Assistant",
     date: "Sept 2021 - Aug 2023",
-    logo: "./queens.png",
+    logo: queensLogo,
     description:
-      "Taught 200+ students across Data Structures, CS II, and Discrete Math. Reviewed Python and Java assignments, resolving 200+ bugs. Provided detailed feedback and supported student understanding via forums and email.",
+      "Assisted in teaching computer science courses by reviewing code, providing feedback, and helping students understand core concepts. Supported both classroom learning and individual problem-solving.",
   },
   {
     company: "Xiaomi Technology Co.",
     title: "Advertising Data Analyst",
     date: "May 2021 – Aug 2021",
-    logo: "./xiaomi.png",
+    logo: xiaomiLogo,
     description:
-      "Managed international ad campaigns and produced performance reports. Used SQL for promotional data analysis, achieving 2–3× higher conversions. Provided promotional advice with 100% client satisfaction.",
+      "Supported global marketing efforts by analyzing campaign data and identifying performance patterns. Worked with teams to develop strategies that improved user engagement and client satisfaction.",
   },
 ];
 

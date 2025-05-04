@@ -1,110 +1,96 @@
-import React, { useState } from "react";
+import React from "react";
 import "./project.css";
-import Manifold from "../../assets/pf-manifold.png";
-import Airflow from "../../assets/pf-airflow.png";
-import Borealis from "../../assets/pf-borealis.png";
-import Smarize from "../../assets/pf-smarizer.png";
-import WechatMini from "../../assets/pf-wechat.png";
-import cs332 from "../../assets/pf-cs332.jpg";
-import CasuallyCool from "../../assets/pf-casuallycool.jpg";
+
 const Project = () => {
   const Menu = [
     {
-      image: CasuallyCool,
-      title: "Web App for a Dance Club in Queen's University",
-      category: "Project",
+      image: require("../../assets/pf-casuallycool.jpg"),
+      title: "Dance Club Web App",
+      description:
+        "Built a responsive web app for Queen's University Dance Club to manage members, events, and content.",
+      tags: ["React", "Firebase", "TailwindCSS"],
       link: "https://github.com/Nina0917/casuallycool_web",
     },
     {
-      image: WechatMini,
-      title: "Wechat Mini-Program that Connects Students",
-      category: "Project",
+      image: require("../../assets/pf-wechat.png"),
+      title: "Wechat Mini-Program",
+      description:
+        "Developed a mini-program to connect students with shared interests using location-based services and messaging.",
+      tags: ["Mini Program", "Node.js", "MongoDB"],
       link: "https://github.com/Amber201604/aranyaka2",
     },
     {
-      image: Borealis,
-      title: "Forecast Depression Level from Text Using ML Algorithms",
-      category: "Project",
+      image: require("../../assets/pf-borealis.png"),
+      title: "Mental Health Prediction",
+      description:
+        "Used NLP and machine learning to predict depression levels based on user-generated text.",
+      tags: ["Python", "Scikit-learn", "NLP"],
       link: "https://github.com/Caroline-xu/QWQ",
     },
     {
-      image: cs332,
-      title: "Covid Vaccination Management Web App",
-      category: "Project",
+      image: require("../../assets/pf-cs332.jpg"),
+      title: "Vaccination Management System",
+      description:
+        "A web-based system to manage COVID-19 vaccination records, user roles, and appointment bookings.",
+      tags: ["Java", "JSP", "MySQL"],
       link: "https://github.com/AmberWJL/CISC332FinalProject",
     },
     {
-      image: Smarize,
-      title: "Smarize: Summarizing Youtube Video Content",
-      category: "Project",
+      image: require("../../assets/pf-smarizer.png"),
+      title: "Smarize: YouTube Summarizer",
+      description:
+        "Built a tool to extract and summarize the main points from YouTube videos using speech-to-text and GPT.",
+      tags: ["React", "OpenAI", "AssemblyAI"],
       link: "https://github.com/AmberWJL/QhacksSmarizer",
     },
-
     {
-      image: Manifold,
-      title: "Manifold Hypothesis Testing for Common Datasets",
-      category: "Research",
+      image: require("../../assets/pf-manifold.png"),
+      title: "Manifold Hypothesis Testing",
+      description:
+        "Explored and tested the manifold hypothesis using real-world datasets. Focused on intrinsic dimensionality.",
+      tags: ["Python", "NumPy", "Research", "Research", "Research"],
       link: "",
     },
-    {
-      image: Airflow,
-      title: "Challenges Developers Encounter when Using Apache Airflow",
-      category: "Research",
-      link: "",
-    },
+    // {
+    //   image: require("../../assets/pf-airflow.png"),
+    //   title: "Usability of Apache Airflow",
+    //   description:
+    //     "Investigated the challenges faced by developers when integrating Apache Airflow into data pipelines.",
+    //   tags: ["Research", "Airflow", "Data Engineering"],
+    //   link: "",
+    // },
   ];
-
-  const [items, setItems] = useState(Menu);
-  const filterItem = (categoryItem) => {
-    const updatedItems = Menu.filter((curElem) => {
-      return curElem.category === categoryItem;
-    });
-
-    setItems(updatedItems);
-  };
 
   return (
     <section className="project container section" id="project">
       <h2 className="section__title">Projects</h2>
-      {/* <div className="work__filters">
-        <span className="work__item" onClick={() => setItems(Menu)}>
-          Everything
-        </span>
-        <span className="work__item" onClick={() => filterItem("Project")}>
-          Project
-        </span>
-        <span className="work__item" onClick={() => filterItem("Research")}>
-          Research
-        </span>
-      </div> */}
-
-      <div className="work__container grid">
-        {items.map((elem) => {
-          const { image, title, category, link } = elem;
-          return (
-            <div className="work__card">
-              <div className="work__thumbnail">
-                <img src={image} alt="" className="work__img" />
-                <div className="work__mask"></div>
+      <div className="new__project__grid">
+        {Menu.map(({ image, title, description, tags, link }, index) => (
+          <div className="new__project__card" key={index}>
+            <img src={image} alt={title} className="new__project__image" />
+            <div className="new__project__content">
+              <h3 className="new__project__title">{title}</h3>
+              <p className="new__project__description">{description}</p>
+              <div className="new__project__tags">
+                {tags.map((tag, i) => (
+                  <span key={i} className="new__project__tag">
+                    {tag}
+                  </span>
+                ))}
               </div>
-
-              <span className="work__category">{category}</span>
-              <h3 className="work__title">{title}</h3>
-              {link !== "" ? (
+              {link && (
                 <a
                   href={link}
                   target="_blank"
                   rel="noreferrer"
-                  className="work__button"
+                  className="new__project__link"
                 >
-                  <i className="icon-link work__button-icon"></i>
+                  <i className="icon-link"></i>
                 </a>
-              ) : (
-                <p className="no__button">Ongoing</p>
               )}
             </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
     </section>
   );

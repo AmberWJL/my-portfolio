@@ -19,6 +19,7 @@
   align-items: flex-start;
   position: relative;
   margin-bottom: 60px;
+  padding-right: 20px;
 }
 
 /* Logo on the far left */
@@ -30,8 +31,8 @@
 }
 
 .timeline-logo {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   object-fit: cover;
   background-color: white;
@@ -41,13 +42,13 @@
 /* Timeline line center with marker */
 .timeline-center {
   width: 20px;
+  left: -25px;
   position: relative;
 }
 
 .timeline-marker {
   position: absolute;
   top: 16px;
-  left: -25px;
   width: 15px;
   height: 15px;
   background-color: #86d4ca;
@@ -62,10 +63,17 @@
 }
 
 .timeline-card {
-  background: #ffffff84;
+  background: #ffffff54;
   padding: 20px 24px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.timeline-card:hover {
+  background: #ffffff86;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
 }
 
 /* Add triangle pointer */
@@ -78,9 +86,16 @@
   height: 0;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
-  border-right: 10px solid #ffffff84; /* same as card background */
-}
+  border-right: 10px solid #ffffff54;
+  background: #ffffff54;
+  transition: none; /* prevents unintended animation */
+  pointer-events: none; /* avoids interaction */
 
+  z-index: -1;
+}
+.timeline-card:hover::before {
+  border-right-color: #ffffff;
+}
 .timeline-header {
   display: flex;
   justify-content: space-between;
@@ -88,7 +103,7 @@
 }
 
 .timeline-title {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: bold;
   color: #003366;
   margin: 0;
@@ -107,8 +122,35 @@
 }
 
 .timeline-description {
-  font-size: 15px;
+  font-size: 14px;
   color: #333;
   margin-top: 10px;
   line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .timeline-left {
+    display: none;
+  }
+
+  .timeline-container::before {
+    left: 40px;
+  }
+
+  .timeline-card::before {
+    left: 10px; /* sticks out to the left */
+  }
+
+  .timeline-item {
+    flex: 1;
+    padding-right: 30px;
+  }
+  .timeline-right {
+    flex: 1;
+    padding-right: 30px;
+  }
+  .timeline-center {
+    width: 20px;
+    left: -46px;
+    position: relative;
+  }
 }

@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
-const Card = (props) => {
+const PubCard = (props) => {
   return (
     <div className="publication">
       <div className="publication-venue">{props.venue}</div>
@@ -26,4 +25,4 @@ const Card = (props) => {
   );
 };
 
-export default Card;
+export default PubCard;

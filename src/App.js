@@ -3,7 +3,7 @@ import "./App.css";
 import Sidebar from "./components/sidebar/Sidebar";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
-import Publication from "./components/publication/Publication";
+import Academic from "./components/academic/Academic";
 import Project from "./components/project/Project";
 import Experience from "./components/experience/Experience";
 
@@ -15,7 +15,7 @@ const App = () => {
         <Home />
         <About />
         <Experience />
-        <Publication />
+        <Academic />
         <Project />
 
         {/* <Contact /> */}
