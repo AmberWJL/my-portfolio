@@ -3,10 +3,10 @@ import "./App.css";
 import Sidebar from "./components/sidebar/Sidebar";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
-import Experience from "./components/experience/experience";
-import Portfolio from "./components/portfolio/Portfolio";
-// import Blog from "./components/blog/Blog";
-import Contact from "./components/contact/Contact";
+import Publication from "./components/publication/Publication";
+import Project from "./components/project/Project";
+import Experience from "./components/experience/Experience";
+
 const App = () => {
   return (
     <>
@@ -15,9 +15,10 @@ const App = () => {
         <Home />
         <About />
         <Experience />
-        <Portfolio />
-        {/* <Blog /> */}
-        <Contact />
+        <Publication />
+        <Project />
+
+        {/* <Contact /> */}
       </main>
     </>
   );

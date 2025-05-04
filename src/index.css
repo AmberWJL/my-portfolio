@@ -1,18 +1,20 @@
 /*=============== Google Fonts ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 /*=============== Variables CSS ===============*/
 :root {
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: #64c9b8;
-  --title-color: hsl(340, 97%, 58%);
-  --text-color: #4c1f5e;
+  --first-color: #14b8a6;
+  --title-color: hsl(0, 0%, 0%);
+  --text-color: #000000;
   --container-color: rgba(255, 255, 255, 0.5);
   /*========== Font and Typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
+  --primary-font: "Heebo", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
   --body-font: "Rubik", sans-serif;
   --icon-font: "Pacifico";
   --h1-font-size: 2.25rem;
@@ -61,7 +63,7 @@ body,
 button,
 input,
 textarea {
-  font-family: var(--body-font);
+  font-family: var(--secondary-font);
   font-size: var(--normal-font-size);
 }
 
@@ -69,6 +71,7 @@ body {
   background-color: var(--body-color);
   line-height: 1.7;
   color: var(--text-color);
+  /* background-color: #f9f9f9; */
   background-image: url(./assets/bg.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -76,7 +79,7 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; 
+  background-size: cover;
 }
 
 h1,
@@ -133,7 +136,6 @@ img {
   z-index: 0;
 }
 
-
 /* the image beside title */
 .section__title::before {
   content: "";
@@ -172,4 +174,19 @@ img {
 
 .btn:hover {
   animation: button-push 0.3s linear 1;
+}
+
+:root {
+  /* ------- colors ------- */
+  --primary-color: #27272a;
+  --secondary-color: #65656d;
+  --tertiary-color: #979798;
+  --quaternary-color: #e4e4e7;
+  --link-color: #14b8a6;
+  /* ---------------------- */
+
+  /* ------- fonts ------- */
+  --primary-font: "Heebo", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+  /* --------------------- */
 }

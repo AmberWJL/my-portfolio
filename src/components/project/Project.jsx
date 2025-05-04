@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./portfolio.css";
+import "./project.css";
 import Manifold from "../../assets/pf-manifold.png";
 import Airflow from "../../assets/pf-airflow.png";
 import Borealis from "../../assets/pf-borealis.png";
@@ -7,7 +7,7 @@ import Smarize from "../../assets/pf-smarizer.png";
 import WechatMini from "../../assets/pf-wechat.png";
 import cs332 from "../../assets/pf-cs332.jpg";
 import CasuallyCool from "../../assets/pf-casuallycool.jpg";
-const Portfolio = () => {
+const Project = () => {
   const Menu = [
     {
       image: CasuallyCool,
@@ -64,9 +64,9 @@ const Portfolio = () => {
   };
 
   return (
-    <section className="work container section" id="work">
-      <h2 className="section__title">Portfolio</h2>
-      <div className="work__filters">
+    <section className="project container section" id="project">
+      <h2 className="section__title">Projects</h2>
+      {/* <div className="work__filters">
         <span className="work__item" onClick={() => setItems(Menu)}>
           Everything
         </span>
@@ -76,7 +76,7 @@ const Portfolio = () => {
         <span className="work__item" onClick={() => filterItem("Research")}>
           Research
         </span>
-      </div>
+      </div> */}
 
       <div className="work__container grid">
         {items.map((elem) => {
@@ -110,4 +110,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Project;

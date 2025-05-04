@@ -1,0 +1,111 @@
+.publications-main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 20px;
+}
+/* Centers all publications */
+.publications-container {
+  display: flex;
+}
+
+.publication {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding: 30px 0;
+  border-radius: 0;
+  margin-left: 100px; /* 👈 This moves it right */
+  background-color: transparent;
+  border-left: 2px solid #f0f0f0;
+  padding-left: 20px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Hover effects */
+.publication:hover {
+  transform: translateY(-4px);
+}
+
+/* Venue styling */
+.publication-venue {
+  font-size: 16px;
+  color: #a3a3a3;
+  font-weight: 400;
+  transition: color 0.2s ease;
+}
+.publication:hover .publication-venue {
+  color: #787878;
+}
+
+/* Title styling */
+.publication-title {
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 8px;
+  transition: color 0.2s ease;
+}
+
+.publication:hover .publication-title {
+  color: #0c0c0c;
+}
+
+.publication-venue-full {
+  font-size: 16px;
+  color: #737373;
+  transition: color 0.2s ease;
+  margin-bottom: 2px;
+}
+
+.publication:hover .publication-venue-full {
+  color: #787878;
+}
+
+/* Authors styling */
+.publication-authors {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 2px;
+  transition: color 0.2s ease;
+}
+
+.publication:hover .publication-authors {
+  color: #444444;
+}
+
+/* Link styling */
+.publication-link a {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--first-color);
+  text-decoration: none;
+  transition: color 0.2s ease, font-weight 0.2s ease;
+}
+
+/* Link hover effect */
+.publication:hover .publication-link a {
+  font-weight: 550;
+}
+
+@media screen and (max-width: 768px) {
+  .publication {
+    flex-direction: column; /* Stack vertically */
+    margin-left: 30px; /* Reduced margin */
+    border-left: 2px solid #f0f0f0;
+    padding-top: 20px;
+    gap: 1px;
+  }
+
+  .publication-right {
+    margin-bottom: 10px; /* Space below venue */
+  }
+  .publication-venue {
+    margin-bottom: 10px; /* Space below venue */
+  }
+
+  .publication-venue {
+    font-size: 14px;
+    color: #a3a3a3;
+  }
+}
