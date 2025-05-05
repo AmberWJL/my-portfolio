@@ -1,87 +1,48 @@
-import React, { useState } from "react";
+import React from "react";
 import "./about.css";
-import Photo from "../../assets/profile-photo.png";
+import ProfileImage from "../../assets/profile-photo.png";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const About = () => {
-  const Skills = [
-    {
-      id: 1,
-      category: "Full Stack Development",
-      percentage: "90%",
-      color: "Full_Stack",
-      skills:
-        "Python, Java, JavaScript, HTML/CSS, C/C++, PHP, MySQL, Express.js, Microsoft Azure, React, Linux, MongoDB",
-    },
-    {
-      id: 2,
-      category: "Machine Learning & AI",
-      percentage: "90%",
-      color: "ML",
-      skills:
-        "Scikit-learn, TensorFlow, PyTorch, Matplotlib, Machine Learning Algorithms, Mathematics and Statistics",
-    },
-  ];
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-
   return (
-    <section className="about container section" id="about">
-      <h2 className="section__title">About Me</h2>
-
-      <div className="about__container grid">
-        <img src={Photo} alt="" className="about__img" />
-
-        <div className="about__data grid">
-          <div className="about__info">
-            <p className="about__description">
-              I'm Amber Wang, a Computer Science student graduating in 2024. I
-              have experience in full stack web development, machine learning,
-              and AI. I'm a quick learner and thrive in team environments. Feel
-              free to explore my protfolio and download my resume!
-            </p>
-            <a href="/Amber_Wang_Resume.pdf" download={true} className="btn">
-              Resume
+    <section className="about section container" id="about">
+      <h2 className="section__title">About</h2>
+      <div className="about__grid">
+        <div className="about__image-container">
+          <img src={ProfileImage} alt="profile" className="about__image" />
+          <div className="about__icons">
+            <a href="https://github.com/" target="_blank" rel="noreferrer">
+              <FaGithub />
+            </a>
+            <a href="https://linkedin.com/" target="_blank" rel="noreferrer">
+              <FaLinkedin />
+            </a>
+            <a
+              href="mailto:jiale.wang@uwaterloo.ca"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaEnvelope />
             </a>
           </div>
-          <div className="about__skills grid">
-            {Skills.map(({ id, category, percentage, color, skills }) => (
-              <div className="skill_container">
-                <div
-                  className="skills__data"
-                  key={id}
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  <div className="skills__titles">
-                    <h3 className="skills__name">{category}</h3>
-                    <span className="skills__number">{percentage}</span>
-                  </div>
-                  <div className="skills__bar">
-                    <span className={`skills__percentage ${color}`}></span>
-                  </div>
-                </div>
-                {/* {isHovered && <div className="hover_to_show">tech skills</div>} */}
-                {isHovered && (
-                  <div className="hover_to_show">
-                    <div class="skills-grid">
-                      {skills.split(", ").map((skill, index) => (
-                        <div className={`skill-item ${color}-bg`} key={index}>
-                          {skill}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
+        </div>
+
+        <div className="about__text">
+          <h1 className="about__title">
+            AI Developer & researcher, and lifelong learner.
+          </h1>
+          <p className="about__description">
+            I'm a developer with a passion for building impactful software at
+            the intersection of engineering and machine learning. From crafting
+            AI-powered mobile apps to publishing research in automated software
+            testing, I thrive in fast-paced environments where innovation meets
+            practicality. I am always looking for new challenges and
+            opportunities to grow as a developer.
+          </p>
+
+          <a href="/resume.pdf" download className="about__resume-button">
+            Resume
+          </a>
         </div>
       </div>
     </section>

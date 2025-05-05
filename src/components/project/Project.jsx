@@ -4,23 +4,31 @@ import "./project.css";
 const Project = () => {
   const Menu = [
     {
-      image: require("../../assets/pf-casuallycool.jpg"),
+      image: require("../../assets/proj/speakease.png"),
+      title: "Dance Club Web App",
+      description:
+        "Developed an AI-based language learning mobile application that aims to enhance pronunciation correctness and conversional skills.",
+      tags: ["TypeScript", "React Native", "Node"],
+      link: "https://www.youtube.com/watch?v=kTqgac8nIwQ",
+    },
+    {
+      image: require("../../assets/proj/pf-casuallycool.jpg"),
       title: "Dance Club Web App",
       description:
         "Built a responsive web app for Queen's University Dance Club to manage members, events, and content.",
-      tags: ["React", "Firebase", "TailwindCSS"],
+      tags: ["JavaScript", "React", "Docker"],
       link: "https://github.com/Nina0917/casuallycool_web",
     },
     {
-      image: require("../../assets/pf-wechat.png"),
+      image: require("../../assets/proj/pf-wechat.png"),
       title: "Wechat Mini-Program",
       description:
         "Developed a mini-program to connect students with shared interests using location-based services and messaging.",
-      tags: ["Mini Program", "Node.js", "MongoDB"],
+      tags: ["JavaScript", "CSS", "MongoDB"],
       link: "https://github.com/Amber201604/aranyaka2",
     },
     {
-      image: require("../../assets/pf-borealis.png"),
+      image: require("../../assets/proj/pf-borealis.png"),
       title: "Mental Health Prediction",
       description:
         "Used NLP and machine learning to predict depression levels based on user-generated text.",
@@ -28,37 +36,29 @@ const Project = () => {
       link: "https://github.com/Caroline-xu/QWQ",
     },
     {
-      image: require("../../assets/pf-cs332.jpg"),
+      image: require("../../assets/proj/pf-cs332.jpg"),
       title: "Vaccination Management System",
       description:
         "A web-based system to manage COVID-19 vaccination records, user roles, and appointment bookings.",
-      tags: ["Java", "JSP", "MySQL"],
+      tags: ["PHP", "MySQL"],
       link: "https://github.com/AmberWJL/CISC332FinalProject",
     },
     {
-      image: require("../../assets/pf-smarizer.png"),
+      image: require("../../assets/proj/pf-smarizer.png"),
       title: "Smarize: YouTube Summarizer",
       description:
         "Built a tool to extract and summarize the main points from YouTube videos using speech-to-text and GPT.",
-      tags: ["React", "OpenAI", "AssemblyAI"],
+      tags: ["Python", "AssemblyAI", "Streamlit"],
       link: "https://github.com/AmberWJL/QhacksSmarizer",
     },
     {
-      image: require("../../assets/pf-manifold.png"),
+      image: require("../../assets/proj/pf-manifold.png"),
       title: "Manifold Hypothesis Testing",
       description:
         "Explored and tested the manifold hypothesis using real-world datasets. Focused on intrinsic dimensionality.",
-      tags: ["Python", "NumPy", "Research", "Research", "Research"],
+      tags: ["Python", "Research"],
       link: "",
     },
-    // {
-    //   image: require("../../assets/pf-airflow.png"),
-    //   title: "Usability of Apache Airflow",
-    //   description:
-    //     "Investigated the challenges faced by developers when integrating Apache Airflow into data pipelines.",
-    //   tags: ["Research", "Airflow", "Data Engineering"],
-    //   link: "",
-    // },
   ];
 
   return (

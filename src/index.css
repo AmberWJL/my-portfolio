@@ -8,6 +8,7 @@
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: #14b8a6;
+  --second-color: #ffd15c;
   --title-color: hsl(0, 0%, 0%);
   --text-color: #000000;
   --container-color: rgba(255, 255, 255, 0.5);

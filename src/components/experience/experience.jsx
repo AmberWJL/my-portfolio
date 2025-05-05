@@ -1,5 +1,4 @@
 import React from "react";
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import ExperienceCard from "./experienceCard";
 import rbcLogo from "../../assets/exp/rbc.png";
 import uwaterlooLogo from "../../assets/exp/uwaterloo.png";

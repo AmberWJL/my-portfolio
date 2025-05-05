@@ -8,10 +8,11 @@ const Home = () => {
     <section className="home container" id="home">
       <div className="intro">
         <img src={Photo} alt="" className="home__img" />
-        <h1 className="home__name">Amber Wang</h1>
+        <h1 className="home__name">Amber Jiale Wang</h1>
         <p className="home_welcome">
           Hello <span class="wave">👋</span>, welcome to my site. I am a
-          developer. I love to work on Web dev, Machine Learning & AI projects.
+          developer. I love to work on full-stack dev, Machine Learning & AI
+          projects.
         </p>
 
         {/* <HeaderSocials /> */}

@@ -7,7 +7,7 @@ import queensLogo from "../../assets/edu/queens.png";
 import { FaGraduationCap } from "react-icons/fa"; // optional
 // import { motion, useInView, useAnimation } from "framer-motion"
 
-const Publication = () => {
+const Academic = () => {
   const EduData = [
     {
       degree: "M.Math in Computer Science",
@@ -58,9 +58,9 @@ const Publication = () => {
   return (
     <section
       className="academic-main-container container section"
-      id="publication"
+      id="academic"
     >
-      <h2 className="section__title">Publication</h2>
+      <h2 className="section__title">Academic</h2>
       <div className="academic-container">
         <div className="publications-wrapper">
           {Data.map((val, id) => {
@@ -94,4 +94,4 @@ const Publication = () => {
   );
 };
 
-export default Publication;
+export default Academic;

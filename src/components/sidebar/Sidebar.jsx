@@ -13,11 +13,11 @@ const Sidebar = () => {
       icon: "icon-user-following",
     },
     {
-      link: "#publication",
-      icon: "icon-note",
+      link: "#works",
+      icon: "icon-briefcase",
     },
     {
-      link: "#experience",
+      link: "#academic",
       icon: "icon-graduation",
     },
     {
