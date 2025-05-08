@@ -5,7 +5,7 @@ const Project = () => {
   const Menu = [
     {
       image: require("../../assets/proj/speakease.png"),
-      title: "Dance Club Web App",
+      title: "AI Language Learning App",
       description:
         "Developed an AI-based language learning mobile application that aims to enhance pronunciation correctness and conversional skills.",
       tags: ["TypeScript", "React Native", "Node"],

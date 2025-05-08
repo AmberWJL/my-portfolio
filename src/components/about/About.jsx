@@ -40,7 +40,11 @@ const About = () => {
             opportunities to grow as a developer.
           </p>
 
-          <a href="/resume.pdf" download className="about__resume-button">
+          <a
+            href="/Amber_W_Resume.pdf"
+            download
+            className="about__resume-button"
+          >
             Resume
           </a>
         </div>
