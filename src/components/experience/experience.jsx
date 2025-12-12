@@ -5,16 +5,25 @@ import uwaterlooLogo from "../../assets/exp/uwaterloo.png";
 import ericssonLogo from "../../assets/exp/ericsson.png";
 import queensLogo from "../../assets/exp/queens.png";
 import xiaomiLogo from "../../assets/exp/xiaomi.png";
+import cgiLogo from "../../assets/exp/cgi.jpg";
 import "./experience.css";
 
 const experiences = [
   {
+    company: "CGI",
+    title: "AI Software Engineer",
+    date: "Sept 2025 - Dec 2025",
+    logo: cgiLogo,
+    description:
+      "Developed an AI-driven code analysis platform with code embedding, code indexing, AST-Parsing, and built RAG pipeline, utilized LLMs for code understanding, architecture diagram generation, enabling BAs to drill into multiple layers of the codebase with business-friendly explanations.",
+  },
+  {
     company: "Royal Bank of Canada",
     title: "Machine Learning Developer",
-    date: "May 2025 - Current",
+    date: "May 2025 - Sept 2025",
     logo: rbcLogo,
     description:
-      "Contributed to the development of Generative AI tools by building prototypes and evaluating language models. Worked closely with teams to support internal use cases through research and hands-on implementation of machine learning workflows.",
+      "Performed in-depth technical assessments of LLM-based developer tools including Cursor, Devin, and Windsurf, analyzing their performance in code understanding, test generation, and automation capabilities; Curated RBC representative coding tasks from internal repositories and benchmark agentic coding tools.",
   },
   {
     company: "University of Waterloo",

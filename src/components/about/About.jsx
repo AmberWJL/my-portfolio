@@ -2,6 +2,7 @@ import React from "react";
 import "./about.css";
 import ProfileImage from "../../assets/profile-photo.png";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGoogleScholar } from "react-icons/fa6";
 
 const About = () => {
   return (
@@ -18,6 +19,13 @@ const About = () => {
               <FaLinkedin />
             </a>
             <a
+              href="https://scholar.google.com/citations?user=5_w8bm4AAAAJ&hl=en"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaGoogleScholar />
+            </a>
+            <a
               href="mailto:jiale.wang@uwaterloo.ca"
               target="_blank"
               rel="noreferrer"
@@ -29,7 +37,7 @@ const About = () => {
 
         <div className="about__text">
           <h1 className="about__title">
-            AI Developer & researcher, and lifelong learner.
+            AI Developer & Researcher, and Lifelong Learner.
           </h1>
           <p className="about__description">
             I'm a developer with a passion for building impactful software at
